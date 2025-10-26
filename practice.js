@@ -2,12 +2,20 @@
 // console.log("Md Mihran Sohail");
 
 
-name = "Tony Stark"
-age = 24;
+// name = "Tony Stark"
+// age = 24;
 
-x = null;
-y = undefined;
- 
-isFollow = true;
+// x = null;
+// y = undefined;
 
-console.log(isFollow);
+// isFollow = true;
+
+// console.log(isFollow);
+
+
+let name = "Tony Stark";
+let age = 24;
+
+const PI = 3.14;
+
+console.log(PI);
