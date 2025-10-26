@@ -42,15 +42,42 @@
 
 // Non-Primitive Data Types
 
-const student = {
-    name : "Md Mihran Sohail",
-    age : 17,
-    cgpa : 8.7,
-    isPass : true,
+// const student = {
+//     name : "Md Mihran Sohail",
+//     age : 17,
+//     cgpa : 8.7,
+//     isPass : true,
+// };
+
+// console.log(student);
+// console.log(student["age"]);
+
+// student["age"] = student["age"] + 1;
+// console.log(student.age);
+
+
+// Practice Question 1
+
+const product = {
+    title : "Parker Jotter Standard CT Ball Pen (Black)",
+    rating : 4,
+    isDeal : true,
+    offer : 5,
+    price : 270,
 };
 
-console.log(student);
-console.log(student["age"]);
+console.log(product);
 
-student["age"] = student["age"] + 1;
-console.log(student.age);
+// Pactice Question 2
+
+const profile = {
+    username : "CodeWithMihran",
+    isFollow : false,
+    followers : 78,
+    following : 23,
+    posts : 24,
+};
+
+console.log(profile);
+console.log(typeof profile);
+console.log(typeof profile["isFollow"]);
