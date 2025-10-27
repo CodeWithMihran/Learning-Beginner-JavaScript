@@ -85,21 +85,67 @@
 
 // Arithmetic Operations
 
-let x = 5;
-let y = 2;
+// let x = 5;
+// let y = 2;
 
-console.log("x = ",x," & y = ",y);
-console.log("x + y = ", x+y);
-console.log("x - y = ", x-y);
-console.log("x * y = ", x*y);
-console.log("x / y = ", x/y);
-console.log("x % y = ", x%y);
-console.log("x ** y = ", x**y);
+// console.log("x = ",x," & y = ",y);
+// console.log("x + y = ", x+y);
+// console.log("x - y = ", x-y);
+// console.log("x * y = ", x*y);
+// console.log("x / y = ", x/y);
+// console.log("x % y = ", x%y);
+// console.log("x ** y = ", x**y);
 
-// Urinary Operators
+// // Urinary Operators
 
-x++; 
-console.log("x = ",x);
+// x++; 
+// console.log("x = ",x);
 
-y--;
-console.log("y = ",y);
+// y--;
+// console.log("y = ",y);
+
+
+// Conditional Operators
+
+let age = 25;
+
+if(age > 18){
+    console.log("You can vote");
+}
+
+if(age < 18){
+    console.log("You can not vote");
+}
+
+let mode = "light";
+let color;
+
+// if(mode === "dark"){
+//     color = "black";
+// }
+
+// if(mode === "light"){
+//     color = "white";
+// }
+
+if(mode === "dark"){
+    color = "black";
+}
+else{
+    color = "white";
+}
+
+console.log(color);
+
+let x = 10;
+
+if(x%2 === 0){
+    console.log(x," is even.");
+}
+else{
+    console.log(x," is odd.");
+}
+
+// Ternary Operator
+
+age >= 18 ? console.log("Adult") :  console.log("Not Adult");
