@@ -217,25 +217,51 @@
 
 // for - off Loop
 
-let str = "Lenovo";
+// let str = "Lenovo";
 
-let size = 0;
-for(let i of str){
-    console.log(i);
-    size++;
+// let size = 0;
+// for(let i of str){
+//     console.log(i);
+//     size++;
+// }
+
+// console.log("string size = ",size);
+
+// // for - in Loop
+
+// let student = {
+//     name : "Rahul Kumar",
+//     age : 20,
+//     cgpa : 8.6,
+//     isPass : true,
+// };
+
+// for(let i in student){
+//     console.log(i, " = ",student[i]);
+// }
+
+// Practice Question 5
+
+// Print all even numbers from 0 to 100
+
+for(let i=2; i<=100; i++){
+    if(i%2 === 0){
+        console.log(i);
+    }
 }
 
-console.log("string size = ",size);
+// Practice Queastion 6
 
-// for - in Loop
-
-let student = {
-    name : "Rahul Kumar",
-    age : 20,
-    cgpa : 8.6,
-    isPass : true,
-};
-
-for(let i in student){
-    console.log(i, " = ",student[i]);
+// Guess The Game Number 
+let x;
+let y = 35;
+    x = prompt("Guess the number : ");
+while(x != y){
+    if(x > y){
+        x = prompt("Your Number is Greater.");
+    }
+    else{
+        x = prompt("Your Number is Smaller.");
+    }
 }
+console.log("Congratulation !! You have won the game");
