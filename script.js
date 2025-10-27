@@ -278,6 +278,29 @@
 
 // Practice Question 7
 
-let name = prompt("Enter Your Full Name : ");
-let username = "@" + name + name.length;
-console.log("Your Suggested Username : ",username);
+// let name = prompt("Enter Your Full Name : ");
+// let username = "@" + name + name.length;
+// console.log("Your Suggested Username : ",username);
+
+
+// Arrays in JavaScript
+// Practice Question 8
+
+let marks = [85,97,44,37,76,60];
+
+let sum = 0;
+for(let i=0; i<marks.length; i++){
+    sum += marks[i];
+}
+
+console.log("The average Marks of the entire class : ",sum/marks.length);
+
+// Practice Question 9
+
+let prices = [250,645,300,900,50];
+
+for(let i=0; i<prices.length; i++){
+    prices[i] = prices[i] - prices[i]/10;
+}
+
+console.log(prices);
