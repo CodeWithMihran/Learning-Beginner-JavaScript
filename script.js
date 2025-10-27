@@ -107,45 +107,80 @@
 
 // Conditional Operators
 
-let age = 25;
+// let age = 25;
 
-if(age > 18){
-    console.log("You can vote");
-}
+// if(age > 18){
+//     console.log("You can vote");
+// }
 
-if(age < 18){
-    console.log("You can not vote");
-}
+// if(age < 18){
+//     console.log("You can not vote");
+// }
 
-let mode = "light";
-let color;
+// let mode = "light";
+// let color;
+
+// // if(mode === "dark"){
+// //     color = "black";
+// // }
+
+// // if(mode === "light"){
+// //     color = "white";
+// // }
 
 // if(mode === "dark"){
 //     color = "black";
 // }
-
-// if(mode === "light"){
+// else{
 //     color = "white";
 // }
 
-if(mode === "dark"){
-    color = "black";
+// console.log(color);
+
+// let x = 10;
+
+// if(x%2 === 0){
+//     console.log(x," is even.");
+// }
+// else{
+//     console.log(x," is odd.");
+// }
+
+// // Ternary Operator
+
+// age >= 18 ? console.log("Adult") :  console.log("Not Adult");
+
+
+// Practice Question 3
+
+let num = prompt("Enter a number : ");
+
+if(num%5 === 0){
+    console.log(num," is a multiple of five.");
 }
 else{
-    color = "white";
+    console.log(num," is not a multiple of five.");
 }
 
-console.log(color);
+// Practice Question 4
 
-let x = 10;
+let score = prompt("Enter your score : ");
+let grade;
 
-if(x%2 === 0){
-    console.log(x," is even.");
+if(score >= 80 && score <= 100){
+    grade = "A";
 }
-else{
-    console.log(x," is odd.");
+else if(score >= 70 && score <= 79){
+    grade = "B";
+}
+else if(score >= 60 && score <= 69){
+    grade = "C";
+}
+else if(score >= 50 && score <= 59){
+    grade = "D";
+}
+else if(score >= 0 && score <= 49){
+    grade = "F";
 }
 
-// Ternary Operator
-
-age >= 18 ? console.log("Adult") :  console.log("Not Adult");
+console.log("Your Grade is : ",grade);
