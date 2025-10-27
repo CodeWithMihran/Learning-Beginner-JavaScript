@@ -286,21 +286,44 @@
 // Arrays in JavaScript
 // Practice Question 8
 
-let marks = [85,97,44,37,76,60];
+// let marks = [85,97,44,37,76,60];
 
-let sum = 0;
-for(let i=0; i<marks.length; i++){
-    sum += marks[i];
-}
+// let sum = 0;
+// for(let i=0; i<marks.length; i++){
+//     sum += marks[i];
+// }
 
-console.log("The average Marks of the entire class : ",sum/marks.length);
+// console.log("The average Marks of the entire class : ",sum/marks.length);
 
-// Practice Question 9
+// // Practice Question 9
 
-let prices = [250,645,300,900,50];
+// let prices = [250,645,300,900,50];
 
-for(let i=0; i<prices.length; i++){
-    prices[i] = prices[i] - prices[i]/10;
-}
+// for(let i=0; i<prices.length; i++){
+//     prices[i] = prices[i] - prices[i]/10;
+// }
 
-console.log(prices);
+// console.log(prices);
+
+let heroes = ["Antman", "Ironman"];
+heroes.unshift("Superman");
+
+console.log(heroes);
+
+heroes.shift();
+console.log(heroes);
+
+let arr = [1,2,3,4,5,6,7,8];
+
+arr.splice(3,2,104,105);
+console.log(arr);
+
+// Practice Question 10
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+companies.shift();
+companies.splice(1,1,"Ola");
+companies.push("Amazon");
+
+console.log(companies);
