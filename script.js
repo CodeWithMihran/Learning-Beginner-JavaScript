@@ -244,24 +244,34 @@
 
 // Print all even numbers from 0 to 100
 
-for(let i=2; i<=100; i++){
-    if(i%2 === 0){
-        console.log(i);
-    }
-}
+// for(let i=2; i<=100; i++){
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+// }
 
-// Practice Queastion 6
+// // Practice Queastion 6
 
-// Guess The Game Number 
-let x;
-let y = 35;
-    x = prompt("Guess the number : ");
-while(x != y){
-    if(x > y){
-        x = prompt("Your Number is Greater.");
-    }
-    else{
-        x = prompt("Your Number is Smaller.");
-    }
-}
-console.log("Congratulation !! You have won the game");
+// // Guess The Game Number 
+// let x;
+// let y = 35;
+//     x = prompt("Guess the number : ");
+// while(x != y){
+//     if(x > y){
+//         x = prompt("Your Number is Greater.");
+//     }
+//     else{
+//         x = prompt("Your Number is Smaller.");
+//     }
+// }
+// console.log("Congratulation !! You have won the game");
+
+// Template Literals
+
+const obj = {
+    item : "Pen",
+    price : 20,
+};
+
+let output = `The cost of ${obj.item} is ${obj.price} rupees`; // This is a Template Literal
+console.log(output);
