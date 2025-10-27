@@ -268,10 +268,16 @@
 
 // Template Literals
 
-const obj = {
-    item : "Pen",
-    price : 20,
-};
+// const obj = {
+//     item : "Pen",
+//     price : 20,
+// };
 
-let output = `The cost of ${obj.item} is ${obj.price} rupees`; // This is a Template Literal
-console.log(output);
+// let output = `The cost of ${obj.item} is ${obj.price} rupees`; // This is a Template Literal
+// console.log(output);
+
+// Practice Question 7
+
+let name = prompt("Enter Your Full Name : ");
+let username = "@" + name + name.length;
+console.log("Your Suggested Username : ",username);
