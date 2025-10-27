@@ -187,30 +187,55 @@
 
 // Loops
 
-for(let i=0; i<5; i++){
-    console.log("i = ",i);
+// for(let i=0; i<5; i++){
+//     console.log("i = ",i);
+// }
+
+// // Calculate Sum of 1 to 100
+
+// let sum = 0;
+// for(let i=1; i<=100; i++){
+//     sum += i;
+// }
+// console.log("The Sum is : ",sum);
+
+// // While Loop
+
+// let i=1;
+// while(i<=10){
+//     console.log("Md Mihran Sohail");
+//     i++;
+// }
+
+// // Do While Loop
+
+// let j = 20;
+// do{
+//     console.log("Md Mihran Sohail");
+//     i++;
+// }while(i <= 10);
+
+// for - off Loop
+
+let str = "Lenovo";
+
+let size = 0;
+for(let i of str){
+    console.log(i);
+    size++;
 }
 
-// Calculate Sum of 1 to 100
+console.log("string size = ",size);
 
-let sum = 0;
-for(let i=1; i<=100; i++){
-    sum += i;
+// for - in Loop
+
+let student = {
+    name : "Rahul Kumar",
+    age : 20,
+    cgpa : 8.6,
+    isPass : true,
+};
+
+for(let i in student){
+    console.log(i, " = ",student[i]);
 }
-console.log("The Sum is : ",sum);
-
-// While Loop
-
-let i=1;
-while(i<=10){
-    console.log("Md Mihran Sohail");
-    i++;
-}
-
-// Do While Loop
-
-let j = 20;
-do{
-    console.log("Md Mihran Sohail");
-    i++;
-}while(i <= 10);
