@@ -153,34 +153,64 @@
 
 // Practice Question 3
 
-let num = prompt("Enter a number : ");
+// let num = prompt("Enter a number : ");
 
-if(num%5 === 0){
-    console.log(num," is a multiple of five.");
-}
-else{
-    console.log(num," is not a multiple of five.");
+// if(num%5 === 0){
+//     console.log(num," is a multiple of five.");
+// }
+// else{
+//     console.log(num," is not a multiple of five.");
+// }
+
+// // Practice Question 4
+
+// let score = prompt("Enter your score : ");
+// let grade;
+
+// if(score >= 80 && score <= 100){
+//     grade = "A";
+// }
+// else if(score >= 70 && score <= 79){
+//     grade = "B";
+// }
+// else if(score >= 60 && score <= 69){
+//     grade = "C";
+// }
+// else if(score >= 50 && score <= 59){
+//     grade = "D";
+// }
+// else if(score >= 0 && score <= 49){
+//     grade = "F";
+// }
+
+// console.log("Your Grade is : ",grade);
+
+// Loops
+
+for(let i=0; i<5; i++){
+    console.log("i = ",i);
 }
 
-// Practice Question 4
+// Calculate Sum of 1 to 100
 
-let score = prompt("Enter your score : ");
-let grade;
+let sum = 0;
+for(let i=1; i<=100; i++){
+    sum += i;
+}
+console.log("The Sum is : ",sum);
 
-if(score >= 80 && score <= 100){
-    grade = "A";
-}
-else if(score >= 70 && score <= 79){
-    grade = "B";
-}
-else if(score >= 60 && score <= 69){
-    grade = "C";
-}
-else if(score >= 50 && score <= 59){
-    grade = "D";
-}
-else if(score >= 0 && score <= 49){
-    grade = "F";
+// While Loop
+
+let i=1;
+while(i<=10){
+    console.log("Md Mihran Sohail");
+    i++;
 }
 
-console.log("Your Grade is : ",grade);
+// Do While Loop
+
+let j = 20;
+do{
+    console.log("Md Mihran Sohail");
+    i++;
+}while(i <= 10);
