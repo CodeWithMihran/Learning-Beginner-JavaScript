@@ -362,16 +362,31 @@
 
 // Practice Question 12
 
-const numOfVowels = (str) => {
-    let count = 0;
-    for(let i=0; i<str.length; i++){
-        if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u" 
-           || str[i] === "A" || str[i] === "E" || str[i] === "I" || str[i] === "O" || str[i] === "U"){
-            count ++;
-        }
-    }
-    return count;
-}
+// const numOfVowels = (str) => {
+//     let count = 0;
+//     for(let i=0; i<str.length; i++){
+//         if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u" 
+//            || str[i] === "A" || str[i] === "E" || str[i] === "I" || str[i] === "O" || str[i] === "U"){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
 
-let str = prompt("Enter a word (string) : ");
-console.log("The number of vowels in the given string are : ", numOfVowels(str));
+// let str = prompt("Enter a word (string) : ");
+// console.log("The number of vowels in the given string are : ", numOfVowels(str));
+
+
+// ForEach Loop in Arrays (Higher Order Function)
+
+let arr = [1,2,3,4,5];
+
+arr.forEach(function printArr(val){
+    console.log(val);
+})
+
+let strArr = ["Mumbai", "Pune", "Hyderabad"];
+
+strArr.forEach( (val, idx, array) => {
+    console.log(val.toUpperCase(), idx, array);
+})
