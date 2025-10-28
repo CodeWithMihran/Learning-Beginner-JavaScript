@@ -305,25 +305,41 @@
 
 // console.log(prices);
 
-let heroes = ["Antman", "Ironman"];
-heroes.unshift("Superman");
+// let heroes = ["Antman", "Ironman"];
+// heroes.unshift("Superman");
 
-console.log(heroes);
+// console.log(heroes);
 
-heroes.shift();
-console.log(heroes);
+// heroes.shift();
+// console.log(heroes);
 
-let arr = [1,2,3,4,5,6,7,8];
+// let arr = [1,2,3,4,5,6,7,8];
 
-arr.splice(3,2,104,105);
-console.log(arr);
+// arr.splice(3,2,104,105);
+// console.log(arr);
 
-// Practice Question 10
+// // Practice Question 10
 
-let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 
-companies.shift();
-companies.splice(1,1,"Ola");
-companies.push("Amazon");
+// companies.shift();
+// companies.splice(1,1,"Ola");
+// companies.push("Amazon");
 
-console.log(companies);
+// console.log(companies);
+
+
+// Functions in JavaScript
+
+// Arrow Function 
+
+const arrowSum = (a, b) => {
+    console.log(a+b);
+}
+
+const arrowMult = (a, b) => {
+    console.log(a * b);
+}
+
+arrowSum(3,4);
+arrowMult(4,5);
