@@ -379,14 +379,26 @@
 
 // ForEach Loop in Arrays (Higher Order Function)
 
-let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 
-arr.forEach(function printArr(val){
-    console.log(val);
-})
+// arr.forEach(function printArr(val){
+//     console.log(val);
+// })
 
-let strArr = ["Mumbai", "Pune", "Hyderabad"];
+// let strArr = ["Mumbai", "Pune", "Hyderabad"];
 
-strArr.forEach( (val, idx, array) => {
-    console.log(val.toUpperCase(), idx, array);
-})
+// strArr.forEach( (val, idx, array) => {
+//     console.log(val.toUpperCase(), idx, array);
+// })
+
+
+// Practice Question 13
+
+let nums = [21,32,45,87,27];
+
+let calcSquare = (val) => {
+    console.log(val*val);
+}
+
+nums.forEach(calcSquare);
+
