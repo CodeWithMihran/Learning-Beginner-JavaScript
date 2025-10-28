@@ -394,11 +394,41 @@
 
 // Practice Question 13
 
+// let nums = [21,32,45,87,27];
+
+// let calcSquare = (val) => {
+//     console.log(val*val);
+// }
+
+// nums.forEach(calcSquare);
+
+
+// Some more Arrays Methods
+
+// Arr.map
 let nums = [21,32,45,87,27];
 
-let calcSquare = (val) => {
-    console.log(val*val);
-}
+let newNums = nums.map((val) => {
+    return val*2;
+})
 
-nums.forEach(calcSquare);
+console.log(newNums);
 
+//Arr.filter
+let new2Nums = nums.filter((val) => {
+    return val%2 === 0;
+})
+
+console.log(new2Nums);
+
+let sumArr = nums.reduce((res, curr) => {
+    return res + curr;
+});
+
+console.log(sumArr);
+
+let largNum = nums.reduce((prev, curr) => {
+    return prev > curr ? prev : curr;
+});
+
+console.log(largNum);
