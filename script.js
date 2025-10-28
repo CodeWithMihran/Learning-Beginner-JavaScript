@@ -406,29 +406,62 @@
 // Some more Arrays Methods
 
 // Arr.map
-let nums = [21,32,45,87,27];
+// let nums = [21,32,45,87,27];
 
-let newNums = nums.map((val) => {
-    return val*2;
+// let newNums = nums.map((val) => {
+//     return val*2;
+// })
+
+// console.log(newNums);
+
+// //Arr.filter
+// let new2Nums = nums.filter((val) => {
+//     return val%2 === 0;
+// })
+
+// console.log(new2Nums);
+
+// let sumArr = nums.reduce((res, curr) => {
+//     return res + curr;
+// });
+
+// console.log(sumArr);
+
+// let largNum = nums.reduce((prev, curr) => {
+//     return prev > curr ? prev : curr;
+// });
+
+// console.log(largNum);
+
+
+// Practice Question 14
+
+let nums = [87,93,64,94,86];
+
+let above90Nums = nums.filter((val) => {
+    return val > 90;
 })
 
-console.log(newNums);
+console.log(above90Nums);
 
-//Arr.filter
-let new2Nums = nums.filter((val) => {
-    return val%2 === 0;
+// Prectice Question 15
+
+let n = prompt("Enter the value of n : ");
+
+let arr = [];
+
+for(let i=0; i<n; i++){
+    arr[i]= i+1;
+}
+
+let sumArr = arr.reduce((res, curr) => {
+    return res+curr;
 })
 
-console.log(new2Nums);
+let multArr = arr.reduce((res, curr) => {
+    return res*curr;
+})
 
-let sumArr = nums.reduce((res, curr) => {
-    return res + curr;
-});
-
-console.log(sumArr);
-
-let largNum = nums.reduce((prev, curr) => {
-    return prev > curr ? prev : curr;
-});
-
-console.log(largNum);
+console.log(arr);
+console.log("Total Sum of the Array : ",sumArr);
+console.log("Factorial of your given number : ",multArr);
