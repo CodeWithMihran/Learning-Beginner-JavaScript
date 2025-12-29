@@ -519,5 +519,19 @@
 // console.log(firstHeading.textContent);
 
 // Practice Question 16
-let h2 = document.querySelector("h2");
-h2.innerText = h2.innerText + " from Apna College Student";
+// let h2 = document.querySelector("h2");
+// h2.innerText = h2.innerText + " from Apna College Student";
+
+
+// Practice Queation 17
+let divs = document.querySelectorAll(".box");
+// divs[0].innerText = "box1";
+// divs[1].innerText = "box2";
+// divs[2].innerText = "box3";
+
+// By using For Loop
+let idx = 1;
+for(div of divs){
+    div.innerText = `box1 ${idx}`;
+    idx++;
+}
