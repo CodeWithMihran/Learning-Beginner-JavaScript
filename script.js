@@ -436,32 +436,63 @@
 
 // Practice Question 14
 
-let nums = [87,93,64,94,86];
+// let nums = [87,93,64,94,86];
 
-let above90Nums = nums.filter((val) => {
-    return val > 90;
-})
+// let above90Nums = nums.filter((val) => {
+//     return val > 90;
+// })
 
-console.log(above90Nums);
+// console.log(above90Nums);
 
-// Prectice Question 15
+// // Prectice Question 15
 
-let n = prompt("Enter the value of n : ");
+// let n = prompt("Enter the value of n : ");
 
-let arr = [];
+// let arr = [];
 
-for(let i=0; i<n; i++){
-    arr[i]= i+1;
-}
+// for(let i=0; i<n; i++){
+//     arr[i]= i+1;
+// }
 
-let sumArr = arr.reduce((res, curr) => {
-    return res+curr;
-})
+// let sumArr = arr.reduce((res, curr) => {
+//     return res+curr;
+// })
 
-let multArr = arr.reduce((res, curr) => {
-    return res*curr;
-})
+// let multArr = arr.reduce((res, curr) => {
+//     return res*curr;
+// })
 
-console.log(arr);
-console.log("Total Sum of the Array : ",sumArr);
-console.log("Factorial of your given number : ",multArr);
+// console.log(arr);
+// console.log("Total Sum of the Array : ",sumArr);
+// console.log("Factorial of your given number : ",multArr);
+
+
+// Document Object Model
+
+// console.dir(document.body);
+// console.log(document.body);
+
+// document.body.style.background = "black";
+// document.body.childNodes[1].style.color = "white";
+
+
+// DOM Manipulation
+
+// let bodyContent = document.getElementById("100");
+// console.dir(bodyContent);
+// console.log(bodyContent);
+
+// let bodyHeading = document.getElementsByClassName("heading");
+// console.dir(bodyHeading);
+// console.log(bodyHeading);
+
+// let headings = document.getElementsByTagName("h1");
+// console.dir(headings);
+
+// Query Selector
+
+let firstHeading = document.querySelector("h1");
+console.dir(firstHeading);
+
+let allHeading = document.querySelectorAll("h1");
+console.dir(allHeading);
