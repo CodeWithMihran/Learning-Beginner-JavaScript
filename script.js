@@ -491,7 +491,7 @@
 
 // Query Selector
 
-let firstHeading = document.querySelector("h1");
+// let firstHeading = document.querySelector("h1");
 // console.dir(firstHeading);
 
 // let allHeading = document.querySelectorAll("h1");
@@ -500,16 +500,20 @@ let firstHeading = document.querySelector("h1");
 
 // DOM Manipulation Properties
 // tagName 
-console.log(firstHeading.tagName);
+// console.log(firstHeading.tagName);
 
-//innerText
-console.log(firstHeading.innerText);
-console.log(document.body.innerText);
-document.body.innerText = "Using Inner Text Property";
+// //innerText
+// console.log(firstHeading.innerText);
+// console.log(document.body.innerText);
+// document.body.innerText = "Using Inner Text Property";
 
-// Children Property
-console.log(document.querySelector("body").children);
+// // Children Property
+// console.log(document.querySelector("body").children);
 
-// innerHTML
-console.log(document.body.innerHTML);
-document.body.innerHTML = "<div><h1><i>Using innerHTML Property</i></h1></div>";
+// // innerHTML
+// console.log(document.body.innerHTML);
+// document.body.innerHTML = "<div><h1><i>Using innerHTML Property</i></h1></div>";
+
+//textContent
+let firstHeading = document.querySelector("h1");
+console.log(firstHeading.textContent);
