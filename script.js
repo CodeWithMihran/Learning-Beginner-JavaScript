@@ -492,7 +492,24 @@
 // Query Selector
 
 let firstHeading = document.querySelector("h1");
-console.dir(firstHeading);
+// console.dir(firstHeading);
 
-let allHeading = document.querySelectorAll("h1");
-console.dir(allHeading);
+// let allHeading = document.querySelectorAll("h1");
+// console.dir(allHeading);
+
+
+// DOM Manipulation Properties
+// tagName 
+console.log(firstHeading.tagName);
+
+//innerText
+console.log(firstHeading.innerText);
+console.log(document.body.innerText);
+document.body.innerText = "Using Inner Text Property";
+
+// Children Property
+console.log(document.querySelector("body").children);
+
+// innerHTML
+console.log(document.body.innerHTML);
+document.body.innerHTML = "<div><h1><i>Using innerHTML Property</i></h1></div>";
