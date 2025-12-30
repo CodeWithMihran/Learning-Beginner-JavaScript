@@ -1,7 +1,6 @@
-.para {
-    color: red;
-}
-
-.newClass {
-    background-color: green;
+div {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    border: 2px solid black;
 }

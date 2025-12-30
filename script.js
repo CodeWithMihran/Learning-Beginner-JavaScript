@@ -595,9 +595,31 @@
 
 // Practice Question 19
 
-let para = document.querySelector("p");
-// para.setAttribute("class", "newClass");
+// let para = document.querySelector("p");
+// // para.setAttribute("class", "newClass");
 
-// Using ClassList Property
-para.classList.add("newClass");
-console.log(para.classList);
+// // Using ClassList Property
+// para.classList.add("newClass");
+// console.log(para.classList);
+
+
+// Events in Java Script
+
+let btn = document.querySelector("button");
+btn.onclick=() => {
+    console.log("Button Clicked");
+}
+
+let box = document.querySelector("div");
+box.onmouseover = () =>{
+    console.log("Currently Hovering on the Box.");
+}
+
+// Event Object
+let btn = document.querySelector("button");
+btn.onclick=(evt) => {
+    console.log(evt);
+    console.log(evt.type);
+    console.log(evt.target);
+    console.log(evt.clientX, evt.clientY);
+}
