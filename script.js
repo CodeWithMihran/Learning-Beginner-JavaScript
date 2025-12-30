@@ -605,21 +605,42 @@
 
 // Events in Java Script
 
+// let btn = document.querySelector("button");
+// btn.onclick=() => {
+//     console.log("Button Clicked");
+// }
+
+// let box = document.querySelector("div");
+// box.onmouseover = () =>{
+//     console.log("Currently Hovering on the Box.");
+// }
+
+// // Event Object
+// let btn = document.querySelector("button");
+// btn.onclick=(evt) => {
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX, evt.clientY);
+// }
+
+
+// Event Listeners
+
 let btn = document.querySelector("button");
-btn.onclick=() => {
+
+btn.addEventListener("click", () =>{
     console.log("Button Clicked");
+});
+
+btn.addEventListener("click", () =>{
+    console.log("Button Clicked Handler2");
+});
+
+const handler3 = () =>{
+    console.log("Button Clicked Handler3");
 }
 
-let box = document.querySelector("div");
-box.onmouseover = () =>{
-    console.log("Currently Hovering on the Box.");
-}
+btn.addEventListener("click",handler3);
 
-// Event Object
-let btn = document.querySelector("button");
-btn.onclick=(evt) => {
-    console.log(evt);
-    console.log(evt.type);
-    console.log(evt.target);
-    console.log(evt.clientX, evt.clientY);
-}
+btn.removeEventListener("click", handler3);
