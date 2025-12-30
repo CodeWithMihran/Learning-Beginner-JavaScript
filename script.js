@@ -585,9 +585,19 @@
 
 // Practice Question 18;
 
-let newBtn = document.createElement("button");
-newBtn.innerText = "click me";
-newBtn.style.backgroundColor = "red";
-newBtn.style.color = "white";
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me";
+// newBtn.style.backgroundColor = "red";
+// newBtn.style.color = "white";
 
-document.querySelector("body").prepend(newBtn);
+// document.querySelector("body").prepend(newBtn);
+
+
+// Practice Question 19
+
+let para = document.querySelector("p");
+// para.setAttribute("class", "newClass");
+
+// Using ClassList Property
+para.classList.add("newClass");
+console.log(para.classList);
