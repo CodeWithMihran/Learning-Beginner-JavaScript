@@ -553,8 +553,31 @@
 
 // DOM Style Node Property
 
+// let div = document.querySelector("div");
+// div.style.backgroundColor = "lime";
+// div.style.fontSize = "20px";
+// div.innerText = "Hello";
+// div.style.visibility = "hidden";
+
+
+// Insert Elements
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me !";
+console.log(newBtn);
+
 let div = document.querySelector("div");
-div.style.backgroundColor = "lime";
-div.style.fontSize = "20px";
-div.innerText = "Hello";
-div.style.visibility = "hidden";
+div.append(newBtn);
+div.prepend(newBtn);
+div.before(newBtn);
+div.after(newBtn);
+
+let newHeading = document.createElement("h1");
+newHeading.innerText = "Heading Created by JavaScript.";
+
+div.before(newHeading);
+document.querySelector("body").prepend(newHeading);
+
+// Delete Element
+div.remove();
+newHeading.remove();
