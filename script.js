@@ -523,15 +523,29 @@
 // h2.innerText = h2.innerText + " from Apna College Student";
 
 
-// Practice Queation 17
-let divs = document.querySelectorAll(".box");
-// divs[0].innerText = "box1";
-// divs[1].innerText = "box2";
-// divs[2].innerText = "box3";
+// // Practice Queation 17
+// let divs = document.querySelectorAll(".box");
+// // divs[0].innerText = "box1";
+// // divs[1].innerText = "box2";
+// // divs[2].innerText = "box3";
 
-// By using For Loop
-let idx = 1;
-for(div of divs){
-    div.innerText = `box1 ${idx}`;
-    idx++;
-}
+// // By using For Loop
+// let idx = 1;
+// for(div of divs){
+//     div.innerText = `box1 ${idx}`;
+//     idx++;
+// }
+
+
+// DOM Attributes Property
+
+let div = document.querySelector("div");
+console.log(div);
+
+let id = div.getAttribute("id");
+console.log(id);
+
+let name = div.getAttribute("name");
+console.log(name);
+
+div.setAttribute("name", "1234");
