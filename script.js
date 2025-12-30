@@ -539,13 +539,22 @@
 
 // DOM Attributes Property
 
+// let div = document.querySelector("div");
+// console.log(div);
+
+// let id = div.getAttribute("id");
+// console.log(id);
+
+// let name = div.getAttribute("name");
+// console.log(name);
+
+// div.setAttribute("name", "1234");
+
+
+// DOM Style Node Property
+
 let div = document.querySelector("div");
-console.log(div);
-
-let id = div.getAttribute("id");
-console.log(id);
-
-let name = div.getAttribute("name");
-console.log(name);
-
-div.setAttribute("name", "1234");
+div.style.backgroundColor = "lime";
+div.style.fontSize = "20px";
+div.innerText = "Hello";
+div.style.visibility = "hidden";
