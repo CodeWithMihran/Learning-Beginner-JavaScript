@@ -562,22 +562,32 @@
 
 // Insert Elements
 
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click Me !";
+// console.log(newBtn);
+
+// let div = document.querySelector("div");
+// div.append(newBtn);
+// div.prepend(newBtn);
+// div.before(newBtn);
+// div.after(newBtn);
+
+// let newHeading = document.createElement("h1");
+// newHeading.innerText = "Heading Created by JavaScript.";
+
+// div.before(newHeading);
+// document.querySelector("body").prepend(newHeading);
+
+// // Delete Element
+// div.remove();
+// newHeading.remove();
+
+
+// Practice Question 18;
+
 let newBtn = document.createElement("button");
-newBtn.innerText = "Click Me !";
-console.log(newBtn);
+newBtn.innerText = "click me";
+newBtn.style.backgroundColor = "red";
+newBtn.style.color = "white";
 
-let div = document.querySelector("div");
-div.append(newBtn);
-div.prepend(newBtn);
-div.before(newBtn);
-div.after(newBtn);
-
-let newHeading = document.createElement("h1");
-newHeading.innerText = "Heading Created by JavaScript.";
-
-div.before(newHeading);
-document.querySelector("body").prepend(newHeading);
-
-// Delete Element
-div.remove();
-newHeading.remove();
+document.querySelector("body").prepend(newBtn);
