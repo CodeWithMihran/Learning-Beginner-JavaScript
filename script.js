@@ -627,20 +627,39 @@
 
 // Event Listeners
 
+// let btn = document.querySelector("button");
+
+// btn.addEventListener("click", () =>{
+//     console.log("Button Clicked");
+// });
+
+// btn.addEventListener("click", () =>{
+//     console.log("Button Clicked Handler2");
+// });
+
+// const handler3 = () =>{
+//     console.log("Button Clicked Handler3");
+// }
+
+// btn.addEventListener("click",handler3);
+
+// btn.removeEventListener("click", handler3);
+
+
+// Practice Question 20
+
 let btn = document.querySelector("button");
+let currMode = "light";
 
 btn.addEventListener("click", () =>{
-    console.log("Button Clicked");
+    if(currMode == "light"){
+        btn.innerText = ("Click to change to Light Mode.");
+    document.body.style.backgroundColor = "black";
+    currMode = "dark";
+    }
+    else{
+        btn.innerText = ("Click to change to Dark Mode.");
+    document.body.style.backgroundColor = "white";
+    currMode = "light";
+    }
 });
-
-btn.addEventListener("click", () =>{
-    console.log("Button Clicked Handler2");
-});
-
-const handler3 = () =>{
-    console.log("Button Clicked Handler3");
-}
-
-btn.addEventListener("click",handler3);
-
-btn.removeEventListener("click", handler3);
