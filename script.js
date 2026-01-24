@@ -806,14 +806,52 @@
 // Callbacks, Promises & Async Await in JavaScript
 
 // Asynchronus Programming
-console.log("One");
-console.log("Two");
+// console.log("One");
+// console.log("Two");
 
-setTimeout(() =>{
-    console.log("Hello");
-}, 2000);
+// setTimeout(() =>{
+//     console.log("Hello");
+// }, 2000);
 
-console.log("Three");
-console.log("Four");
+// console.log("Three");
+// console.log("Four");
+
+
+// CallBack
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+
+// function calculator(a, b, sumCallback){
+//     sumCallback(a,b);
+// }
+
+// calculator(5, 4, sum);
+
+// calculator(3, 4, (a,b) =>{
+//     console.log(a+b);
+// });
+
+// Callback Hell
+
+function getData(dataID, getNextData){
+    setTimeout(() =>{
+        console.log("Data", dataID);
+        if(getNextData){
+            getNextData();
+        }
+    },2000);
+};
+
+getData(1, () =>{
+    getData(2, () =>{
+        getData(3, () =>{
+            getData(4);
+        })
+    });
+});
+
+
 
 
