@@ -835,23 +835,124 @@
 
 // Callback Hell
 
-function getData(dataID, getNextData){
-    setTimeout(() =>{
+// function getData(dataID, getNextData){
+//     setTimeout(() =>{
+//         console.log("Data", dataID);
+//         if(getNextData){
+//             getNextData();
+//         }
+//     },2000);
+// };
+
+// getData(1, () =>{
+//     getData(2, () =>{
+//         getData(3, () =>{
+//             getData(4);
+//         })
+//     });
+// });
+
+
+// Promises
+
+// let promise = new Promise((resolve, reject) =>{
+//     console.log("I am a Promise");
+//     // resolve("Success");
+//     reject("Some Unknown Error");
+// });
+
+// function getData(dataID, getNextData){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//         console.log("Data", dataID);
+//         resolve("Success");
+//         if(getNextData){
+//             getNextData();
+//         }
+//     },5000);
+//   });
+// };
+
+
+// .then and .catch
+
+// const getPromise = () =>{
+//     return new Promise((resolve, reject) =>{
+//     console.log("I am a Promise");
+//     resolve("Success");
+//     reject("Some Error Occoured");
+//    });
+// }
+
+// let promise = getPromise();
+
+// promise.then((res) =>{
+//     console.log("Promise Fulfilled", res);
+// })
+
+// promise.catch((err) =>{
+//     console.log("Rejected" ,err);
+// })
+
+
+// Promise Chain
+
+// function asyncFunc1(){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//             console.log("Data1");
+//             resolve("Success1");
+//         }, 2000);
+//     });
+// };
+
+// function asyncFunc2(){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//             console.log("Data2");
+//             resolve("Success2");
+//         }, 2000);
+//     });
+// };
+
+// console.log("Fetching Data1..........");
+
+// asyncFunc1().then((res) =>{
+//     console.log("Fetching Data2............");
+//     asyncFunc2().then((res) =>{});
+// });
+
+function getData(dataID){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
         console.log("Data", dataID);
-        if(getNextData){
-            getNextData();
-        }
-    },2000);
+        resolve("Success");
+    },1000);
+  });
 };
 
-getData(1, () =>{
-    getData(2, () =>{
-        getData(3, () =>{
-            getData(4);
-        })
-    });
-});
+// getData(1).then((res) =>{
+//     getData(2).then((res) =>{
+//         getData(3).then((res) =>{
+//             getData(4).then((res) =>{});
+//         });
+//     });
+// });
 
-
-
-
+console.log("Getting Data 1");
+getData(1)
+    .then((res) =>{
+        console.log("Getting Data 2");
+        getData(2)
+           .then((res) =>{
+               console.log("Getting Data 3");
+               getData(3)
+                .then((res) =>{
+                    console.log("Getting Data 4");
+                    getData(4)
+                       .then((res) =>{
+                        console.log(res);
+                       })
+                })
+           })
+    })
