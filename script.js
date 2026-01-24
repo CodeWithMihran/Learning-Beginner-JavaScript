@@ -922,14 +922,14 @@
 //     asyncFunc2().then((res) =>{});
 // });
 
-function getData(dataID){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() =>{
-        console.log("Data", dataID);
-        resolve("Success");
-    },1000);
-  });
-};
+// function getData(dataID){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//         console.log("Data", dataID);
+//         resolve("Success");
+//     },1000);
+//   });
+// };
 
 // getData(1).then((res) =>{
 //     getData(2).then((res) =>{
@@ -939,20 +939,57 @@ function getData(dataID){
 //     });
 // });
 
-console.log("Getting Data 1");
-getData(1)
-    .then((res) =>{
-        console.log("Getting Data 2");
-        getData(2)
-           .then((res) =>{
-               console.log("Getting Data 3");
-               getData(3)
-                .then((res) =>{
-                    console.log("Getting Data 4");
-                    getData(4)
-                       .then((res) =>{
-                        console.log(res);
-                       })
-                })
-           })
-    })
+// console.log("Getting Data 1");
+// getData(1)
+//     .then((res) =>{
+//         console.log("Getting Data 2");
+//         getData(2)
+//            .then((res) =>{
+//                console.log("Getting Data 3");
+//                getData(3)
+//                 .then((res) =>{
+//                     console.log("Getting Data 4");
+//                     getData(4)
+//                        .then((res) =>{
+//                         console.log(res);
+//                        })
+//                 })
+//            })
+//     })
+
+
+
+// Async-Await
+
+// function api(){
+//     return new Promise ((resolve, reject) =>{
+//         setTimeout(()=>{
+//             console.log("Weather Data");
+//             resolve(200);
+//         }, 2000);
+//     });
+// };
+
+// async function getWeatherData(){
+//     await api();
+// };
+
+function getData(dataID){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
+        console.log("Data", dataID);
+        resolve("Success");
+    },1000);
+  });
+};
+
+(async function (){
+    console.log("Getting Data 1");
+    await getData(1);
+    console.log("Getting Data 2");
+    await getData(2);
+    console.log("Getting Data 3");
+    await getData(3);
+    console.log("Getting Data 4");
+    await getData(4);
+})();  // Using IIFE (Immediately Invoke Function Expression) to execute it automatically.
