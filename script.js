@@ -763,26 +763,41 @@
 
 // Practice Question 21
 
-let data = "Secret Data";
+// let data = "Secret Data";
 
-class User{
-    constructor(name, email){
-        this.name = name;
-        this.email = email;
-    }
+// class User{
+//     constructor(name, email){
+//         this.name = name;
+//         this.email = email;
+//     }
 
-    viewData(){
-        console.log(data);
-    }
-};
+//     viewData(){
+//         console.log(data);
+//     }
+// };
 
-class Admin extends User{
-    constructor(name, email){
-        super(name, email);
-    }
-    editData(){
-        data = "Some new secret data";
-    }
-};
+// class Admin extends User{
+//     constructor(name, email){
+//         super(name, email);
+//     }
+//     editData(){
+//         data = "Some new secret data";
+//     }
+// };
 
-let student1 = new Admin("Abhijeet", "abhijeet1234@gmail.com");
+// let student1 = new Admin("Abhijeet", "abhijeet1234@gmail.com");
+
+
+// Error Handling
+
+let a = 10;
+let b = 15;
+
+console.log("a + b : ",a+b);
+try{
+    console.log("a - b : ",a-c);
+} catch(err){
+    console.log(err);
+}
+console.log("a * b : ",a*b);
+console.log("a / b : ",a/b);
