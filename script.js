@@ -689,31 +689,74 @@
 
 // Classes in JavaScript
 
-class ToyotaCar{
+// class ToyotaCar{
 
-    constructor(brand, size){
-        console.log("Constructor invoked");
-        this.brand = brand;
-        this.size = size;
+//     constructor(brand, size){
+//         console.log("Constructor invoked");
+//         this.brand = brand;
+//         this.size = size;
+//     }
+
+//     start(){
+//         console.log("start");
+//     }
+
+//     stop(){
+//         console.log("stop");
+//     }
+
+//     setBrand(brand){
+//         this.brandName = brand;
+//     }
+// };
+
+// let fortuner = new ToyotaCar("Fortuner", 20);
+// console.log(fortuner);
+// let lexus = new ToyotaCar("Lexus",15);
+// console.log(lexus);
+// lexus.setBrand("Lexus");
+
+
+// Inheritence in JavaScript and Super KeyWord
+
+class Person{
+
+    constructor(name){
+        this.species = "Homo-Sapiens";
+        this.name = name;
     }
 
-    start(){
-        console.log("start");
+    eat(){
+        console.log("Eat");
     }
 
-    stop(){
-        console.log("stop");
+    sleep(){
+        console.log("Sleep");
     }
 
-    setBrand(brand){
-        this.brandName = brand;
+    work(){
+        console.log("Do Nothing");
     }
-};
+}
 
-let fortuner = new ToyotaCar("Fortuner", 20);
-console.log(fortuner);
-let lexus = new ToyotaCar("Lexus",15);
-console.log(lexus);
-lexus.setBrand("Lexus");
+class Engineer extends Person{
 
+    constructor(name, branch){
+        super(name);               // To invoke parent class constructor
+        this.branch = branch;
+    }
+
+    work(){
+        super.eat();
+        console.log("Solve Problem and make something.");
+    }
+}
+
+class Doctors extends Person{
+    work(){
+        console.log("Treat Patients");
+    }
+}
+
+let Engg1 = new Engineer("Mihran","AIML Engg.");
 
