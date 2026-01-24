@@ -648,18 +648,72 @@
 
 // Practice Question 20
 
-let btn = document.querySelector("button");
-let currMode = "light";
+// let btn = document.querySelector("button");
+// let currMode = "light";
 
-btn.addEventListener("click", () =>{
-    if(currMode == "light"){
-        btn.innerText = ("Click to change to Light Mode.");
-    document.body.style.backgroundColor = "black";
-    currMode = "dark";
+// btn.addEventListener("click", () =>{
+//     if(currMode == "light"){
+//         btn.innerText = ("Click to change to Light Mode.");
+//     document.body.style.backgroundColor = "black";
+//     currMode = "dark";
+//     }
+//     else{
+//         btn.innerText = ("Click to change to Dark Mode.");
+//     document.body.style.backgroundColor = "white";
+//     currMode = "light";
+//     }
+// });
+
+
+
+// OOPs in JavaScript (Object Oriented Programming)
+
+// const student = {
+//     fullName : "Md Mihran Sohail",
+//     marks : 94.4,
+//     printmarks : function(){
+//         console.log("Marks : ", this.marks);
+//     },
+//     calcCGPA() {
+//         console.log("CGPA : ", this.marks/9.5);
+//     }
+// };
+
+// const student2 = {
+//     fullName : "Md Raiyan Sohail",
+//     marks : 95,
+// }
+
+// student2.__proto__ = student;
+
+
+// Classes in JavaScript
+
+class ToyotaCar{
+
+    constructor(brand, size){
+        console.log("Constructor invoked");
+        this.brand = brand;
+        this.size = size;
     }
-    else{
-        btn.innerText = ("Click to change to Dark Mode.");
-    document.body.style.backgroundColor = "white";
-    currMode = "light";
+
+    start(){
+        console.log("start");
     }
-});
+
+    stop(){
+        console.log("stop");
+    }
+
+    setBrand(brand){
+        this.brandName = brand;
+    }
+};
+
+let fortuner = new ToyotaCar("Fortuner", 20);
+console.log(fortuner);
+let lexus = new ToyotaCar("Lexus",15);
+console.log(lexus);
+lexus.setBrand("Lexus");
+
+
