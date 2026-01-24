@@ -790,14 +790,30 @@
 
 // Error Handling
 
-let a = 10;
-let b = 15;
+// let a = 10;
+// let b = 15;
 
-console.log("a + b : ",a+b);
-try{
-    console.log("a - b : ",a-c);
-} catch(err){
-    console.log(err);
-}
-console.log("a * b : ",a*b);
-console.log("a / b : ",a/b);
+// console.log("a + b : ",a+b);
+// try{
+//     console.log("a - b : ",a-c);
+// } catch(err){
+//     console.log(err);
+// }
+// console.log("a * b : ",a*b);
+// console.log("a / b : ",a/b);
+
+
+// Callbacks, Promises & Async Await in JavaScript
+
+// Asynchronus Programming
+console.log("One");
+console.log("Two");
+
+setTimeout(() =>{
+    console.log("Hello");
+}, 2000);
+
+console.log("Three");
+console.log("Four");
+
+
