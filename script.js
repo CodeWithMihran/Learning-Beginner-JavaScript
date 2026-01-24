@@ -719,44 +719,70 @@
 
 // Inheritence in JavaScript and Super KeyWord
 
-class Person{
+// class Person{
 
-    constructor(name){
-        this.species = "Homo-Sapiens";
+//     constructor(name){
+//         this.species = "Homo-Sapiens";
+//         this.name = name;
+//     }
+
+//     eat(){
+//         console.log("Eat");
+//     }
+
+//     sleep(){
+//         console.log("Sleep");
+//     }
+
+//     work(){
+//         console.log("Do Nothing");
+//     }
+// }
+
+// class Engineer extends Person{
+
+//     constructor(name, branch){
+//         super(name);               // To invoke parent class constructor
+//         this.branch = branch;
+//     }
+
+//     work(){
+//         super.eat();
+//         console.log("Solve Problem and make something.");
+//     }
+// }
+
+// class Doctors extends Person{
+//     work(){
+//         console.log("Treat Patients");
+//     }
+// }
+
+// let Engg1 = new Engineer("Mihran","AIML Engg.");
+
+
+// Practice Question 21
+
+let data = "Secret Data";
+
+class User{
+    constructor(name, email){
         this.name = name;
+        this.email = email;
     }
 
-    eat(){
-        console.log("Eat");
+    viewData(){
+        console.log(data);
     }
+};
 
-    sleep(){
-        console.log("Sleep");
+class Admin extends User{
+    constructor(name, email){
+        super(name, email);
     }
-
-    work(){
-        console.log("Do Nothing");
+    editData(){
+        data = "Some new secret data";
     }
-}
+};
 
-class Engineer extends Person{
-
-    constructor(name, branch){
-        super(name);               // To invoke parent class constructor
-        this.branch = branch;
-    }
-
-    work(){
-        super.eat();
-        console.log("Solve Problem and make something.");
-    }
-}
-
-class Doctors extends Person{
-    work(){
-        console.log("Treat Patients");
-    }
-}
-
-let Engg1 = new Engineer("Mihran","AIML Engg.");
-
+let student1 = new Admin("Abhijeet", "abhijeet1234@gmail.com");
