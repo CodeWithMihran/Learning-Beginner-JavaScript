@@ -974,22 +974,42 @@
 //     await api();
 // };
 
-function getData(dataID){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() =>{
-        console.log("Data", dataID);
-        resolve("Success");
-    },1000);
-  });
+// function getData(dataID){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//         console.log("Data", dataID);
+//         resolve("Success");
+//     },1000);
+//   });
+// };
+
+// (async function (){
+//     console.log("Getting Data 1");
+//     await getData(1);
+//     console.log("Getting Data 2");
+//     await getData(2);
+//     console.log("Getting Data 3");
+//     await getData(3);
+//     console.log("Getting Data 4");
+//     await getData(4);
+// })();  // Using IIFE (Immediately Invoke Function Expression) to execute it automatically.
+
+
+
+// Fetch API (Application PRogramming Interface)
+
+const URL = "https://catfact.ninja/fact";
+
+let fact = document.querySelector("#fact");
+let btn = document.querySelector("#btn");
+
+const getFacts = async () =>{
+    console.log("Getting Data......");
+    let response = await fetch(URL);
+    console.log(response); // JSON Format
+    let data = await response.json();
+    console.log(data);
+    fact.innerText = data.fact;
 };
 
-(async function (){
-    console.log("Getting Data 1");
-    await getData(1);
-    console.log("Getting Data 2");
-    await getData(2);
-    console.log("Getting Data 3");
-    await getData(3);
-    console.log("Getting Data 4");
-    await getData(4);
-})();  // Using IIFE (Immediately Invoke Function Expression) to execute it automatically.
+btn.addEventListener("click", getFacts);
